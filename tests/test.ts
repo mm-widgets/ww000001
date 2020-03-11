@@ -2,7 +2,7 @@ import Widget from '../src/index';
 import '../src/index';
 
 const widget = document.querySelector<Widget>('#widget')!;
-widget.addEventListener('fdwe-event', () => {
+widget.addEventListener('mmwe-event', () => {
 	// console.info(e.data);
 });
 
