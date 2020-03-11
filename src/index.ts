@@ -91,7 +91,7 @@ export default class Tree extends HTMLElement {
 					this.open(node.id);				// 结点是关闭的，则进行展开
 				}
 			}
-			emit(this, 'fdwe-tree-activate-node', true, true, {
+			emit(this, 'mmwe-tree-activate-node', true, true, {
 				data: {
 					data: node.data,
 					id: node.id,
@@ -102,7 +102,7 @@ export default class Tree extends HTMLElement {
 		});
 		el.on('select_node.jstree', (_e, evt_data) => {
 			const node = evt_data.node;
-			emit(this, 'fdwe-tree-select-node', true, true, {
+			emit(this, 'mmwe-tree-select-node', true, true, {
 				data: {
 					data: node.data,
 					id: node.id,

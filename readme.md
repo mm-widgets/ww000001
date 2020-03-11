@@ -30,8 +30,9 @@
 	- [3.10. `check_all`](#310-check_all)
 	- [3.11. `uncheck_all`](#311-uncheck_all)
 	- [3.12. `check_node`](#312-check_node)
+	- [3.13. `set_data`](#313-set_data)
 - [4. Events](#4-events)
-	- [4.1. feidao-web事件绑定示例](#41-feidao-web事件绑定示例)
+	- [4.1. 事件绑定示例](#41-事件绑定示例)
 	- [4.2. `mmwe-tree-select-node`](#42-mmwe-tree-select-node)
 	- [4.3. `mmwe-tree-activate-node`](#43-mmwe-tree-activate-node)
 - [5. Example](#5-example)
@@ -172,9 +173,13 @@ widget.setAttribute('data', '[{"no":1,"parent":"root","name":"1", "alias":"ddddd
 
 选中一个或多个结点
 
+### 3.13. `set_data`
+
+重置数据
+
 ## 4. Events
 
-### 4.1. feidao-web事件绑定示例
+### 4.1. 事件绑定示例
 
 ```html
 <mm-000001 data-feidao-actions="mmwe-tree-select-node:a001"></mm-000001>
