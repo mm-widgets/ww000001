@@ -1,7 +1,7 @@
 {
-	"name": "@mmstudio/widgets",
+	"name": "@mmstudio/ww000001",
 	"version": "1.0.0",
-	"description": "",
+	"description": "树",
 	"scripts": {
 		"dev": "npm run watch-umd & gulp browser-sync-amd",
 		"ie": "npm run watch & webpack & gulp browser-sync-ie",
@@ -13,8 +13,7 @@
 		"compile-amd": "tsc -m amd -d false --outFile ./dist/main.js",
 		"compile-cjs": "tsc",
 		"compile": "npm run compile-cjs && npm run compile-amd",
-		"build": "npm run clean && npm run lint && npm run compile",
-		"up": "git pull git@gitee.com:mmstudio/base.git widgets-web"
+		"build": "npm run clean && npm run lint && npm run compile"
 	},
 	"repository": {
 		"type": "git",
@@ -32,8 +31,8 @@
 		"框架"
 	],
 	"author": {
-		"name": "$user",
-		"email": "$email@xxx.com"
+		"name": "taoqf",
+		"email": "tao_qf@163.com"
 	},
 	"maintainers": [
 		{
