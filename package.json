@@ -41,8 +41,12 @@
 		}
 	],
 	"license": "MIT",
+	"peerDependencies": {
+		"jquery": "^3.4.1"
+	},
 	"dependencies": {
-		"@mmstudio/on": "^1.0.202003041352"
+		"@mmstudio/on": "1.0.202003041352",
+		"jstree": "3.3.9"
 	},
 	"devDependencies": {
 		"@babel/core": "latest",
@@ -51,6 +55,8 @@
 		"@babel/preset-env": "latest",
 		"@babel/runtime": "latest",
 		"@dojo/loader": "^2.0.0",
+		"@types/jquery": "latest",
+		"@types/jstree": "latest",
 		"@typescript-eslint/eslint-plugin": "latest",
 		"@typescript-eslint/parser": "latest",
 		"babel-loader": "latest",
@@ -62,6 +68,7 @@
 		"eslint-plugin-import": "latest",
 		"gulp": "latest",
 		"gulp-shell": "latest",
+		"jquery": "latest",
 		"prompts": "latest",
 		"ts-loader": "latest",
 		"typescript": "next",
