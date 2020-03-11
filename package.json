@@ -1,6 +1,6 @@
 {
 	"name": "@mmstudio/ww000001",
-	"version": "1.0.0",
+	"version": "1.0.202003111248",
 	"description": "树",
 	"scripts": {
 		"dev": "npm run watch-umd & gulp browser-sync-amd",
