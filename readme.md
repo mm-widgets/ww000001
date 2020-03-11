@@ -35,8 +35,6 @@
 	- [4.1. 事件绑定示例](#41-事件绑定示例)
 	- [4.2. `mmwe-tree-select-node`](#42-mmwe-tree-select-node)
 	- [4.3. `mmwe-tree-activate-node`](#43-mmwe-tree-activate-node)
-- [5. Example](#5-example)
-	- [5.1. 完整示例](#51-完整示例)
 
 <!-- /TOC -->
 
@@ -211,13 +209,4 @@ widget.setAttribute('data', '[{"no":1,"parent":"root","name":"1", "alias":"ddddd
 	parent: string;
 	parents: string[];
 }
-```
-
-## 5. Example
-
-### 5.1. 完整示例
-
-```html
-<mm-000001 id="widget" checkbox node_open node_close dots icon="./images/45_70x70.jpg" id-field="no" text-field="name" pid-field="parent" title-field="alias" icon-field="img" data='[{"no":1,"parent":"root","name":"1", "alias":"ffffffffffffffffffffffff"},{"no":2,"parent":"0","name":"2"},{"no":"11","parent":"1","name":"444"},{"no":"12","parent":"1","name":"12", "img":"https://avatars1.githubusercontent.com/u/15901911?s=40&v=4"},{"no":"111","parent":"11","name":"111", "no_checkbox": true},{"no":"112","parent":"11","name":"112", "no_checkbox": true},{"no":"211","parent":"2","name":"211", "no_checkbox": true}]' data-mm-action="mmwe-tree-select-node:a001,mmwe-tree-activate-node:a002"></mm-000001>
-<input id="btn" type="button" value="test">
 ```

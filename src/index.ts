@@ -2,7 +2,7 @@ import { emit } from '@mmstudio/on';
 import $ from 'jquery';
 import 'jstree';
 
-const no = 'fd-w000001';
+const no = 'mm-000001';
 
 /**
  * :host表示选中当前组件,使用all:initial;属性,
@@ -270,7 +270,7 @@ export default class Tree extends HTMLElement {
 	public show_icon(id: string) {
 		return this.jstree.show_icon(id);
 	}
-	private translate_data(value: { [field: string]: string; }[]) {
+	private translate_data(value: { [field: string]: unknown; }[]) {
 		const icon = this.getAttribute('icon') as string;
 		const id_field = this.getAttribute('id-field') || 'id';
 		const pid_field = this.getAttribute('pid-field') || 'pid';
@@ -286,8 +286,8 @@ export default class Tree extends HTMLElement {
 				},
 				data: it,
 				icon: it[icon_field] || icon,
-				id: it[id_field].toString(),
-				parent: it[pid_field].toString(),
+				id: String(it[id_field]),
+				parent: String(it[pid_field]),
 				text: it[text_field]
 			} as Item;
 			m_id.set(item.id, item);
@@ -300,7 +300,7 @@ export default class Tree extends HTMLElement {
 		});
 		return this.data;
 	}
-	public set_data(value: { [field: string]: string; }[]) {
+	public set_data(value: { [field: string]: unknown; }[]) {
 		// reset local variables
 		this.translate_data(value);
 		this.jstree.refresh(false, false);
