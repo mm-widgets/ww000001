@@ -54,7 +54,7 @@
 		"@babel/plugin-transform-typeof-symbol": "latest",
 		"@babel/preset-env": "latest",
 		"@babel/runtime": "latest",
-		"@dojo/loader": "^2.0.0",
+		"@dojo/loader": "latest",
 		"@types/jquery": "latest",
 		"@types/jstree": "latest",
 		"@typescript-eslint/eslint-plugin": "latest",
